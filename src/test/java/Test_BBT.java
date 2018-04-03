@@ -109,12 +109,6 @@ public class Test_BBT
 
 
     @Test
-    public void test_addClient()
-    {
-        assert true;
-    }
-
-    @Test
     public void test_addInvoice()
     {
         assert true;
