@@ -9,7 +9,7 @@ public class App {
 	public static void main(String[] args) {
 		DataManager repo = new DataManager();
 		
-		ClientController ctrl = new ClientController();
+		ClientController ctrl = new ClientController(repo);
 		
 		ElectricaUI console = new ElectricaUI(ctrl);
 		console.Run();

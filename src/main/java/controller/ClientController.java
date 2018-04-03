@@ -8,12 +8,12 @@ import model.*;
 public class ClientController {
 	private DataManager _dataManager;
     
-    public ClientController(){
-        _dataManager = new DataManager();
+    public ClientController(DataManager dataManager){
+        _dataManager = dataManager;
     }
     
     private String ValidateClient(String name, String address, String id){
-        if(!name.equals("") && !address.equals("") && !name.equals(" ")){
+        if(!name.equals("") && !address.equals("") && !id.equals("")){
             for(int i=0;i<name.length();i++){
                 if((!Character.isUpperCase(name.charAt(i))) && (!Character.isLowerCase(name.charAt(i))) && (!Character.isSpaceChar(name.charAt(i)))){
                     return "Invalid character: " + name.charAt(i);
@@ -40,7 +40,7 @@ public class ClientController {
         }
         try{
             _dataManager.getClients().add(c);
-            _dataManager.SaveChanges();
+            //_dataManager.SaveChanges();
             return null;
         }catch(Exception ex){
             return ex.getMessage();
