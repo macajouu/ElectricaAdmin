@@ -8,3 +8,5 @@ Lorincz Arnold, Mera 278, 1
 2020, 7, 50,  0
 Lorincz Arnold, Mera 278, 1
 2021, 7, 50,  0
+Lorincz Arnold, Mera 278, 1
+2025, 7, 50,  0

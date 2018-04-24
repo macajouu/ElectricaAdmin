@@ -27,7 +27,7 @@ public class Test_WBT
             ex.printStackTrace();
         }
 
-        assertEquals( initialLength, repo.getInvoices().size() + 1);
+        assertEquals( initialLength, repo.getInvoices().size());
     }
 
     @Test
