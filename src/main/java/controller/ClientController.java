@@ -13,7 +13,7 @@ public class ClientController {
     }
     
     private String ValidateClient(String name, String address, String id){
-        if(!name.equals("") && !address.equals("") && !id.equals("")){
+        if(!name.equals("") && !address.equals("") && !name.equals("")){
             for(int i=0;i<name.length();i++){
                 if((!Character.isUpperCase(name.charAt(i))) && (!Character.isLowerCase(name.charAt(i))) && (!Character.isSpaceChar(name.charAt(i)))){
                     return "Invalid character: " + name.charAt(i);
@@ -40,7 +40,7 @@ public class ClientController {
         }
         try{
             _dataManager.getClients().add(c);
-            //_dataManager.SaveChanges();
+            _dataManager.SaveChanges();
             return null;
         }catch(Exception ex){
             return ex.getMessage();
@@ -70,7 +70,7 @@ public class ClientController {
                                     return "Monthly index already exists!";
                                 }
                             }
-                        
+
                             _dataManager.getInvoices().add(i);
                             _dataManager.SaveChanges();
                             return null;
