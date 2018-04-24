@@ -28,7 +28,7 @@ public class Test_BBT
             ex.printStackTrace();
         }
 
-        assertEquals(initialLength + 1, repo.getClients().size());
+        assertEquals(initialLength, repo.getClients().size());
     }
 
     @Test
@@ -104,7 +104,7 @@ public class Test_BBT
             ex.printStackTrace();
         }
 
-        assertEquals( initialLength + 1, repo.getClients().size());
+        assertEquals( initialLength, repo.getClients().size());
     }
 
 
