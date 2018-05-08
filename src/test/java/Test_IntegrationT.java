@@ -75,4 +75,19 @@ public class Test_IntegrationT
         testCaseB();
         testCaseC();
     }
+
+    @Test
+    public void testCaseAB()
+    {
+        testCaseA();
+        testCaseB();
+    }
+
+    @Test
+    public void testCaseABC()
+    {
+        testCaseA();
+        testCaseB();
+        testCaseC();
+    }
 }

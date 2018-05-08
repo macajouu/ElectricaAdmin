@@ -20,7 +20,7 @@ public class Test_WBT
 
         try{
             Client c = repo.getClients().get(0);
-            ctrl.AddClientIndex(c, 2025, 7, 50);
+            ctrl.AddClientIndex(c, 2029, 7, 50);
         }
         catch (Exception ex)
         {
